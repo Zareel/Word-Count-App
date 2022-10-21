@@ -1,5 +1,4 @@
 let textarea = document.querySelector(".textarea");
-let btn = document.querySelector(".btn");
 let result = document.querySelector(".result span");
 
 let countWords = () => {
@@ -8,7 +7,9 @@ let countWords = () => {
   let splitWords = wordsTrimmed.split(" ");
 
   let numberOfWords = splitWords.length;
-
+  if (splitWords[0] == "") {
+    numberOfWords = 0;
+  }
   result.innerHTML = numberOfWords;
 };
-btn.addEventListener("click", countWords);
+textarea.addEventListener("input", countWords);

@@ -4,6 +4,6 @@
 
 ## Technologies used are : HTML, CSS and JavaScript
 
-![image](<./Screenshot%20(52).png>)
+![image](./ProjectScreenshot.png)
 
 [live](https://z-word-count-app.netlify.app/)
